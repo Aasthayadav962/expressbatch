@@ -1,0 +1,49 @@
+Template engine & pages :- This are UI pages capable to load both client side as well as server side content , here client side content will be executed on browser while to execute server side content we use template engine.
+
+Template engine : This are modules capable to execute template script implemented on template pages
+
+Template script & template engine
+
+pug script : pug engine   
+ejs script : ejs engine
+jade script : jade engine
+
+demo.pug
+
+html
+head
+title PUG Demo
+body
+h1 Welcome to world of PUG  
+
+demo.ejs
+
+<html>
+<head>
+<title>EJS Demo</title>
+</head>
+<body>
+<h1>Welcome to world of EJS</h1>
+</body>
+</html>
+
+-> Steps to load & cofigure template page
+
+* Install template engine module as per requirement (ejs or pug)
+
+command : npm install pug or npm install ejs
+
+* Move to application configuration file (app.js) , configure template engine & template pages to load application
+
+app.set("view engine","pug");
+app.set("views","./views");
+
+* Create a folder by the name 'views' at location of current configuration file , in this folder create template page as per requirement
+
+* Move to specific router & load template page
+
+res.render("template page name");
+
+
+
+

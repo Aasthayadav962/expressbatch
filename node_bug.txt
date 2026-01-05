@@ -1,0 +1,11 @@
+Node implementational drawbacks :-
+
+-> Manual management for request & response
+
+-> Manual response header management
+
+-> Manual request path & method checking
+
+-> Unavaibility of template pages
+
+-> Static file loading (.css , .js , fonts.....)
